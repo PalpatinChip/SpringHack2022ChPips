@@ -8,7 +8,7 @@
     <link href="regScript.js">
 </head>
 <body>
-    <div class = "contactUsFrame">
+    <div class = "contactUsFrame" onclick="this.style.left='323px'" ondblclick="this.style.left='0px'">
         <h1 class = "ContactUSText">Contact us:</h1>
         <a href="https://vk.com" class = "vkBt" target="_blank"></a>
         <a href="https://" class = "telegBt" target="_blank"></a>
@@ -18,14 +18,14 @@
     <main class="inputInfoFrame">
         <h1 class = "txtRegistration">Registration</h1>
         <a href="https://" class = "googleEnter" target="_blank"></a>
-            <form name="test" method="post" action="register.php">
+            <form class = "form" name="test" method="post" action="register.php">
                 
-                <input class = "boxInputFullName" type="text" name="name" placeholder="Enter your full name">
-                <input class = "boxInputLogin" type="text" name="login" placeholder="Enter your future username">
-                <input class = "boxInputPassw" type="text" name="password" placeholder="Enter your password">
-                <input class = "boxInputPasswAgain" type="text" name="pass_again" placeholder="Enter your password again">
-                <input class = "boxInputPhoneNumber" type="text" name="phone" placeholder="Enter your phone number">               
-                <input class = "boxInputMail" type="text" name="email" placeholder="Enter your mail">       
+                <input style = "z-index: 7;" class = "baseBox" type="text" name="name" placeholder="Enter your full name">
+                <input style = "z-index: 6;" class = "baseBox" type="text" name="login" placeholder="Enter your future username">
+                <input style = "z-index: 5;" class = "baseBox" type="text" name="password" placeholder="Enter your password">
+                <input style = "z-index: 4;" class = "baseBox" type="text" name="pass_again" placeholder="Enter your password again">
+                <input style = "z-index: 3;" class = "baseBox" type="text" name="phone" placeholder="Enter your phone number">               
+                <input style = "z-index: 2;" class = "baseBox" type="text" name="email" placeholder="Enter your mail">       
                 <input class = "boxButtonEnter" type="submit" value="Enter">
                 
             </form>
@@ -38,5 +38,6 @@
     <div class = "pngwing2"></div>
     <a href="https://ddos-guard.net" class = "ddosImg"></a>
     <div class = "topLeft"></div>
+    <div style = "position: absolute; width: 300px; height: 300px; background-color: white; top:500px; left: 423px; user-select: none;" onclick="alert('Wow! You found easter egg! You are awesome!')">Click me</div>
 </body>
 </html>
