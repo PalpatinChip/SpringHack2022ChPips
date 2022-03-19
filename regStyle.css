@@ -1,37 +1,13 @@
 body {
-  position: relative;
-  width: 1900px;
-  height: 1080px;
+  height: max-content;
+  width: max-content;
   overflow-y: scroll;
   background: radial-gradient(
     65.12% 159.79% at 58.78% 54.49%,
     #99fefe 0%,
     rgba(0, 240, 255, 0.5) 0.01%,
     #0aa7ff 100%
-  ); /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-}
-
-.pngwing1 {
-  position: absolute;
-  width: 863px;
-  height: 1082px;
-  left: 1153.49px;
-  top: -209px;
-  background: url(pngwing.png);
-  mix-blend-mode: screen;
-  filter: blur(10px);
-  transform: matrix(0, 1, 1, 0, 0, 0);
-}
-
-.pngwing2 {
-  position: absolute;
-  width: 1194px;
-  height: 1082px;
-  left: -349px;
-  top: 287px;
-  background: url(pngwing.png);
-  mix-blend-mode: overlay;
-  filter: blur(15px);
+  );
 }
 
 .ddosImg {
@@ -39,10 +15,11 @@ body {
   width: 215px;
   height: 215px;
   left: 1622px;
-  top: 790px;
+  top: 700px;
 
-  background: url(изображение_2022-03-18_215506.png);
+  background: url(images/ddos.png);
   filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
 }
 
 .contactUsFrame {
@@ -53,8 +30,9 @@ body {
   top: 482px;
   background: #ffffff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  border-radius: 25px;
   background: url(images/framefon.png);
+  z-index: 1;
 }
 
 .ContactUSText {
@@ -118,38 +96,34 @@ body {
   position: absolute;
   width: 334px;
   height: 450px;
-  left: 1275px;
+  left: 1245px;
   top: 106px;
   background: #ffffff;
   mix-blend-mode: normal;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  border-radius: 25px;
   background: url(images/framefon.png);
+  z-index: 1;
 }
 
 .boxLogPage {
   position: absolute;
   width: 245px;
-  height: 82px;
+  height: 80px;
   left: 48px;
   top: 202px;
   background: #b9eeff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  text-decoration: none;
+  border-radius: 25px;
 }
 
 .txtLoginPage {
-  position: absolute;
-  width: 183px;
-  height: 46px;
-  left: 82px;
-  top: 217px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 28px;
-
   text-align: center;
   color: #000000;
 }
@@ -173,43 +147,25 @@ body {
 .inputInfoFrame {
   position: absolute;
   width: 422px;
-  height: 811px;
-  left: 793px;
-  top: 164px;
+  height: 800px;
+  left: 763px;
+  top: 104px;
   background: #ffffff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
+  border-radius: 25px;
   background: url(images/framefon.png);
+  z-index: 1;
 }
 
-.boxInputPasswAgain {
-  position: absolute;
-  width: 321px;
-  height: 57px;
-  left: 52px;
-  top: 522px;
-  background: #b9eeff;
-  box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #000000;
-}
-
-.boxInputPassw {
+.boxInputFullName {
   position: absolute;
   width: 321px;
   height: 57px;
   left: 53px;
-  top: 451px;
+  top: 171px;
   background: #b9eeff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border-radius: 25px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -218,44 +174,7 @@ body {
   line-height: 21px;
 
   color: #000000;
-}
-
-.boxInputPhoneNumber {
-  position: absolute;
-  width: 321px;
-  height: 57px;
-  left: 53px;
-  top: 380px;
-  background: #b9eeff;
-  box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #000000;
-}
-
-.boxInputMail {
-  position: absolute;
-  width: 321px;
-  height: 57px;
-  left: 53px;
-  top: 309px;
-  background: #b9eeff;
-  box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #000000;
+  z-index: 7;
 }
 
 .boxInputLogin {
@@ -267,7 +186,7 @@ body {
 
   background: #b9eeff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border-radius: 25px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -276,17 +195,18 @@ body {
   line-height: 21px;
 
   color: #000000;
+  z-index: 6;
 }
 
-.boxInputFullName {
+.boxInputMail {
   position: absolute;
   width: 321px;
   height: 57px;
   left: 53px;
-  top: 171px;
+  top: 309px;
   background: #b9eeff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border-radius: 25px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -295,6 +215,67 @@ body {
   line-height: 21px;
 
   color: #000000;
+  z-index: 5;
+}
+
+.boxInputPhoneNumber {
+  position: absolute;
+  width: 321px;
+  height: 57px;
+  left: 53px;
+  top: 380px;
+  background: #b9eeff;
+  box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+  z-index: 4;
+}
+
+.boxInputPassw {
+  position: absolute;
+  width: 321px;
+  height: 57px;
+  left: 53px;
+  top: 451px;
+  background: #b9eeff;
+  box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+  z-index: 3;
+}
+
+.boxInputPasswAgain {
+  position: absolute;
+  width: 321px;
+  height: 57px;
+  left: 52px;
+  top: 522px;
+  background: #b9eeff;
+  box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+  z-index: 2;
 }
 
 .boxButtonEnter {
@@ -322,10 +303,11 @@ body {
   width: 70px;
   height: 70px;
   left: 174px;
-  top: 100px;
-  background: url(.png);
+  top: 90px;
+  background: url(images/Google.png);
   mix-blend-mode: normal;
   filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
 }
 
 .txtRegistration {
@@ -344,12 +326,35 @@ body {
   color: #000000;
 }
 
-.Ellipse1 {
+.topLeft {
   position: absolute;
-  width: 506px;
-  height: 506px;
-  left: -253px;
-  top: -253px;
+  width: 253px;
+  height: 253px;
+  top: 0px;
+  left: 0px;
+  background: url(images/top_left.png);
+}
 
-  background: url(изображение_2022-03-19_004118.png);
+.pngwing1 {
+  position: absolute;
+  width: 659px;
+  height: 763px;
+  left: 1202.67px;
+  top: 0px;
+  background: url(images/fonMaskRight.png);
+  mix-blend-mode: screen;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+.pngwing2 {
+  position: absolute;
+  width: 845px;
+  height: 793px;
+  left: 0px;
+  top: 170px;
+  background: url(images/fonMaskLeft.png);
+  mix-blend-mode: overlay;
+  filter: blur(2px);
+  z-index: 0;
 }
