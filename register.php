@@ -18,10 +18,16 @@ if (isset($_POST['name']) &&
     $email = get_post($conn, 'email');
     if ($password == $pass_again) {
         $query = "INSERT INTO register VALUES" .
-            "('$name', '$login', '$password', '$phone', '$email', NULL)";
+            "('$name', '$login', '$password', '$phone', '$email', NULL, NULL)";
         $result = $conn->query($query);
         if (!$result) echo "Сбой при вставке данных: $query<br>" .
             $conn->error . "<br><br>";
+        echo <<<_END
+        Регистрация прошла успешно.
+        Для дальнейшего входа по QR Google аутентификатора:
+        <img src="">
+        _END;
+
     }
     else echo 'Неправильно ввел.';
 
@@ -31,3 +37,6 @@ function get_post($conn, $var)
 {
     return $conn->real_escape_string($_POST[$var]);
 }
+
+
+// UPDATE register SET access_key = '123' WHERE login = 'test2';
