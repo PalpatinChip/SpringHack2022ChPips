@@ -1,0 +1,82 @@
+body {
+width: 100vw;
+height: 100vh;
+background: linear-gradient(180deg, #71EEFF 0%, rgba(16, 169, 255, 0.720312) 93.23%, rgba(0, 117, 255, 0.7) 100%, rgba(103, 173, 255, 0.7) 100%);
+}
+
+.fon {
+    position: absolute;
+    width: 1388px;
+    height: 1341px;
+    
+    background: url(pngwing.png);
+}
+
+.frame {
+    position: absolute;
+    width: 1150px;
+    height: 522px;
+    
+    background: #FFFFFF;
+    border-radius: 50px;
+    transform: rotate(0.49deg);
+}
+
+.rectangle{
+    position: absolute;
+    width: 211px;
+    height: 180px;
+    
+    background: url(pngwing.png);
+}
+
+.qr-cod {
+    position: absolute;
+    width: 72px;
+    height: 74px;
+    
+    background: url(image.png);
+}
+
+.Text {
+    position: absolute;
+    width: 891px;
+    height: 177px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+}
+
+
+.Enter{
+    position: absolute;
+    width: 555px;
+    height: 98px;
+    
+    background: #2FB4FF;
+    border-radius: 50px;
+}
+
+
+.Shablon_for_enter {
+    position: absolute;
+    width: 199px;
+    height: 36px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+}
