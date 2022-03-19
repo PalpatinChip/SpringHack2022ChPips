@@ -120,10 +120,10 @@ body {
 
 .contactUsFrame {
   position: fixed;
-  width: 23%;
-  height: 24vw;
-  left: 15%;
-  top: 40%;
+  width: 25vw;
+  height: 50vh;
+  left: 14vw;
+  top: 40vh;
   background: #ffffff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -135,9 +135,9 @@ body {
 
 .ContactUSText {
   position: relative;
-  width: 50%;
-  height: 10%;
-  left: 25%;
+  width: 15vw;
+  height: 1vh;
+  left: 5vw;
   top: 5%;
   font-family: "Roboto";
   font-style: normal;
@@ -154,7 +154,6 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  left: 15%;
 }
 
 .contactsBlock {
@@ -165,8 +164,8 @@ body {
 }
 
 .contactsImages {
-  width: 7vw;
-  height: 7vw;
+  width: 5vw;
+  height: 5vw;
   user-select: none;
   filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
   margin: 1vw;
@@ -174,10 +173,10 @@ body {
 
 .toLoginPageFrame {
   position: fixed;
-  width: 20%;
-  height: 40%;
-  left: 67%;
-  top: 10%;
+  width: 20vw;
+  height: 40vh;
+  left: 65vw;
+  top: 10vh;
   background: #ffffff;
   mix-blend-mode: normal;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
@@ -189,10 +188,10 @@ body {
 
 .boxLogPage {
   position: relative;
-  width: 60%;
+  width: 16vw;
   height: 30%;
-  left: 20%;
-  top: 40%;
+  left: 2vw;
+  top: 10vh;
   background: #b9eeff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
   border: outset 2px rgb(0, 0, 0);
@@ -206,7 +205,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
-  line-height: 28px;
+  line-height: 3vw;
   text-decoration: none;
   user-select: none;
   text-align: center;
@@ -215,10 +214,10 @@ body {
 
 .txtAlreadyReg {
   position: relative;
-  width: 80%;
-  height: 10%;
-  left: 10%;
-  top: 5%;
+  width: 16vw;
+  height: 10vh;
+  left: 2vw;
+  top: 1vh;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 1000;
@@ -233,10 +232,10 @@ body {
 
 .inputInfoFrame {
   position: fixed;
-  width: 25%;
-  height: 80%;
-  left: 40%;
-  top: 10%;
+  width: 24vw;
+  height: 80vh;
+  left: 40vw;
+  top: 10vh;
   background: #ffffff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -247,10 +246,10 @@ body {
 
 .txtRegistration {
   position: relative;
-  width: 10%;
-  height: 7%;
-  left: 28%;
-  top: 3%;
+  width: 14vw;
+  height: 5vh;
+  left: 5vw;
+  top: 1vh;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 1000;
@@ -264,8 +263,8 @@ body {
 .googleEnter {
   position: relative;
   width: 4vw;
-  height: 4vw;
-  left: 40%;
+  height: 8vh;
+  left: 10vw;
 
   user-select: none;
   background-size: cover;
@@ -275,16 +274,16 @@ body {
 }
 
 .form {
-  height: 70%;
+  height: 56vh;
   position: relative;
   display: flex;
   flex-direction: column;
-  left: 12%;
+  left: 2vw;
 }
 
 .baseBox {
-  width: 70%;
-  height: 25%;
+  width: 18vw;
+  height: 8vh;
 
   padding-left: 5%;
   margin-bottom: 5%;
@@ -304,9 +303,9 @@ body {
 
 .boxButtonEnter {
   position: relative;
-  width: 60%;
-  height: 40%;
-  left: 8%;
+  width: 10vw;
+  height: 10vh;
+  left: 7vw;
   margin-top: 10%;
   background: #40b7fb;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
