@@ -43,9 +43,9 @@ body {
 
 .contactUsFrame {
   position: absolute;
-  width: 405px;
+  width: 400px;
   height: 420px;
-  left: 323px;
+  left: 320px;
   top: 480px;
   background: #ffffff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
@@ -72,45 +72,25 @@ body {
   color: #000000;
 }
 
-.vkBt {
+.contactsBlockTopRow {
   position: absolute;
-  width: 96px;
-  height: 96px;
-  left: 23px;
-  top: 139px;
-  background-image: url(images/vk.png);
-  background-position: center;
-  filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: row;
+  top: 150px;
+  left: 20px;
 }
 
-.wappBt {
+.contactsBlockBotRow {
   position: absolute;
-  width: 96px;
-  height: 96px;
-  left: 283px;
-  top: 139px;
-  background: url(images/wapp.png);
-  filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
+  top: 286px;
+  left: 152px;
 }
 
-.gmailBt {
-  position: absolute;
+.contactsImages {
   width: 96px;
   height: 96px;
-  left: 153px;
-  top: 139px;
-  background-image: url(images/gmail.png);
   filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
-}
-
-.telegBt {
-  position: absolute;
-  width: 96px;
-  height: 96px;
-  left: 153px;
-  top: 293px;
-  background: url(images/teleg.png);
-  filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
+  margin-right: 40px;
 }
 
 .toLoginPageFrame {
@@ -251,7 +231,7 @@ body {
   position: absolute;
   width: 659px;
   height: 763px;
-  left: 1202.67px;
+  right: 0px;
   top: 0px;
   background: url(images/fonMaskRight.png);
   mix-blend-mode: screen;
