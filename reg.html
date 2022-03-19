@@ -7,18 +7,38 @@
     <link rel="stylesheet" type="text/css" href="styleVova.css">
 </head>
 <body>
-    <div class = "contactUsFrame" onclick="this.style.left='323px'" ondblclick="this.style.left='0px'">
-        <h1 class = "ContactUSText">Contact us:</h1>
-        <div class = "contactsBlockTopRow">
-            <a class = "contactsImages" style = "background-image: url('images/vk.png');"    href="https://vk.com/ddosguard"  target="_blank"></a>
-            <a class = "contactsImages" style = "background-image: url('images/teleg.png');" href="https://t.me/ddos_guard"   target="_blank"></a>
-            <a class = "contactsImages" style = "background-image: url('images/gmail.png');" href="info@ddos-guard.net"       target="_blank"></a>
+    <!-- Preloader -->
+    <div class = "preloader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
         </div>
-        <a class = "contactsImages contactsBlockBotRow" style = "background-image: url('images/wapp.png');"  href="https://wa.me/89889476904" target="_blank"></a>
+    </div>
+
+    <div class = "contactUsFrame" onclick="this.style.left='15%'" ondblclick="this.style.left='0%'">
+        <h1 class = "ContactUSText">Contact us:</h1>
+        <div class = "ContUsBtns">
+            <div class = "contactsBlock" style = "z-index: 10;">
+                <a class = "contactsImages" href = "https://vk.com/ddosguard"  target="_blank"><img src="images/vk.png" class = "contactsImages"></a>
+                <a class = "contactsImages" href = "https://t.me/ddos_guard"   target="_blank"><img src="images/teleg.png" class = "contactsImages"></a>
+            </div>
+            <div class = "contactsBlock">
+                <a class = "contactsImages" href="info@ddos-guard.net" target="_blank"><img src="images/gmail.png" class = "contactsImages"></a>
+                <a class = "contactsImages" href="https://wa.me/89889476904" target="_blank"><img src="images/wapp.png" class = "contactsImages"></a>
+            </div>
+        </div>
+
     </div>
     <main class="inputInfoFrame">
         <h1 class = "txtRegistration">Registration</h1>
-        <a href="https://" class = "googleEnter" target="_blank"></a>
+        <a href="https://" target="_blank"><img src = "images/Google.png" class = "googleEnter"></a>
             <form class = "form" name="test" method="post" action="register.php">
                 <input style = "z-index: 7;" class = "baseBox" type="text" name="name"       placeholder="Enter your full name">
                 <input style = "z-index: 6;" class = "baseBox" type="text" name="login"      placeholder="Enter your future username">
@@ -31,12 +51,23 @@
         </main>
     <div class = "toLoginPageFrame">
         <h1 class = "txtAlreadyReg">Are you already registred?</h1>
-        <a href = "log.html" class = "boxLogPage"><h1 class = "txtLoginPage">To login page</h1></a>
+        <div class = "boxLogPage"><a href = "log.html" style = "user-select: none; text-decoration: none;"><h1 class = "txtLoginPage">To login page</h1></a></div>
     </div>
     <div class = "pngwing1"></div>
     <div class = "pngwing2"></div>
-    <a href="https://ddos-guard.net" class = "ddosImg"></a>
+    <a href="https://ddos-guard.net" class = "ddosImg"><img src = "images/ddos.png">"</a>
     <div class = "topLeft"></div>
-    <div style = "position: absolute; width: 300px; height: 300px; background-color: white; top:500px; left: 423px; user-select: none;" onclick="alert('Wow! You found easter egg! You are awesome!')">Click me</div>
+    
+    <div style = "position:fixed; width: 15%; height: 10%; background-color: white; top:50%; left: 17%; user-select: none; text-align: center;" onclick="alert('Wow! You found easter egg! You are awesome!')">Click me</div>
+
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
 </body>
 </html>

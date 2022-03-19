@@ -1,6 +1,6 @@
 body {
-  height: max-content;
-  width: max-content;
+  height: 100%;
+  width: 100%;
   overflow-y: scroll;
   background: radial-gradient(
     65.12% 159.79% at 58.78% 54.49%,
@@ -10,24 +10,120 @@ body {
   );
 }
 
-.ddosImg {
-  position: absolute;
-  width: 215px;
-  height: 215px;
-  left: 1622px;
-  top: 700px;
+/* FOR PRELOADER */
 
-  background: url(images/ddos.png);
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  z-index: 1001;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.sk-cube-grid {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #333;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+/* PRELOADER END */
+
+.ddosImg {
+  position: fixed;
+  width: 6vw;
+  height: 6vh;
+  left: 75vw;
+  top: 35vw;
+
   filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
   z-index: 1;
 }
 
 .contactUsFrame {
-  position: absolute;
-  width: 400px;
-  height: 420px;
-  left: 320px;
-  top: 480px;
+  position: fixed;
+  width: 23%;
+  height: 24vw;
+  left: 15%;
+  top: 40%;
   background: #ffffff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -38,48 +134,50 @@ body {
 }
 
 .ContactUSText {
-  position: absolute;
-  width: 275px;
-  height: 82px;
-  left: 71px;
-  top: 27px;
+  position: relative;
+  width: 50%;
+  height: 10%;
+  left: 25%;
+  top: 5%;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2vw;
   line-height: 42px;
   user-select: none;
   text-align: center;
   color: #000000;
 }
 
-.contactsBlockTopRow {
-  position: absolute;
+.contUsBtns {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  top: 150px;
-  left: 20px;
+  justify-content: space-around;
+  flex-direction: column;
+  left: 15%;
 }
 
-.contactsBlockBotRow {
-  position: absolute;
-  top: 286px;
-  left: 152px;
+.contactsBlock {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .contactsImages {
-  width: 96px;
-  height: 96px;
+  width: 7vw;
+  height: 7vw;
+  user-select: none;
   filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
-  margin-right: 40px;
+  margin: 1vw;
 }
 
 .toLoginPageFrame {
-  position: absolute;
-  width: 350px;
-  height: 450px;
-  left: 1250px;
-  top: 100px;
+  position: fixed;
+  width: 20%;
+  height: 40%;
+  left: 67%;
+  top: 10%;
   background: #ffffff;
   mix-blend-mode: normal;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
@@ -90,11 +188,11 @@ body {
 }
 
 .boxLogPage {
-  position: absolute;
-  width: 230px;
-  height: 80px;
-  left: 60px;
-  top: 225px;
+  position: relative;
+  width: 60%;
+  height: 30%;
+  left: 20%;
+  top: 40%;
   background: #b9eeff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
   border: outset 2px rgb(0, 0, 0);
@@ -107,23 +205,24 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2vw;
   line-height: 28px;
+  text-decoration: none;
   user-select: none;
   text-align: center;
   color: #000000;
 }
 
 .txtAlreadyReg {
-  position: absolute;
-  width: 256px;
-  height: 156px;
-  left: 37px;
-  top: 22px;
+  position: relative;
+  width: 80%;
+  height: 10%;
+  left: 10%;
+  top: 5%;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
+  font-weight: 1000;
+  font-size: 2vw;
   line-height: 42px;
   user-select: none;
   text-align: center;
@@ -133,11 +232,11 @@ body {
 /* REGISTRATION FRAME */
 
 .inputInfoFrame {
-  position: absolute;
-  width: 450px;
-  height: 800px;
-  left: 763px;
-  top: 100px;
+  position: fixed;
+  width: 25%;
+  height: 80%;
+  left: 40%;
+  top: 10%;
   background: #ffffff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -146,39 +245,69 @@ body {
   z-index: 1;
 }
 
+.txtRegistration {
+  position: relative;
+  width: 10%;
+  height: 7%;
+  left: 28%;
+  top: 3%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 2vw;
+
+  user-select: none;
+  text-align: center;
+  color: #000000;
+}
+
+.googleEnter {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  left: 40%;
+
+  user-select: none;
+  background-size: cover;
+  mix-blend-mode: normal;
+  filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
+  z-index: 10;
+}
+
 .form {
-  position: absolute;
+  height: 70%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  top: 200px;
-  left: 75px;
+  left: 12%;
 }
 
 .baseBox {
-  width: 300px;
-  height: 60px;
+  width: 70%;
+  height: 25%;
 
-  padding-left: 10px;
-  margin-top: 10px;
+  padding-left: 5%;
+  margin-bottom: 5%;
 
   background: #b9eeff;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
 
+  user-select: none;
   color: black;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.4vw;
   line-height: 21px;
 }
 
 .boxButtonEnter {
-  position: absolute;
-  width: 150px;
-  height: 80px;
-  left: 75px;
-  top: 480px;
+  position: relative;
+  width: 60%;
+  height: 40%;
+  left: 8%;
+  margin-top: 10%;
   background: #40b7fb;
   box-shadow: 10px -20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -186,55 +315,28 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 1000;
-  font-size: 36px;
+  font-size: 2vw;
   line-height: 24px;
   user-select: none;
   text-align: center;
   color: #000000;
 }
 
-.googleEnter {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  left: 195px;
-  top: 120px;
-  background: url("images/Google.png");
-  mix-blend-mode: normal;
-  filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
-  z-index: 10;
-}
-
-.txtRegistration {
-  position: absolute;
-  width: 300px;
-  height: 70px;
-  left: 75px;
-  top: 20px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 42px;
-  user-select: none;
-  text-align: center;
-  color: #000000;
-}
-
+/*  */
 .topLeft {
-  position: absolute;
+  position: fixed;
   width: 253px;
   height: 253px;
-  top: 0px;
-  left: 0px;
+  top: 0%;
+  left: 0%;
   background: url(images/top_left.png);
 }
 
 .pngwing1 {
-  position: absolute;
-  width: 659px;
-  height: 763px;
-  right: 0px;
+  position: fixed;
+  width: 45%;
+  height: 75%;
+  right: 0%;
   top: 0px;
   background: url(images/fonMaskRight.png);
   mix-blend-mode: screen;
@@ -242,11 +344,10 @@ body {
 }
 
 .pngwing2 {
-  position: absolute;
-  width: 845px;
-  height: 793px;
-  left: 0px;
-  top: 170px;
+  position: fixed;
+  width: 55%;
+  height: 80%;
+  top: 20%;
   background: url(images/fonMaskLeft.png);
   mix-blend-mode: overlay;
   z-index: 0;
