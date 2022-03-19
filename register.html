@@ -3,39 +3,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Хуеманская пиздабратия</title>
-    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="regStyle.css">
+    <link href="regScript.js">
 </head>
 <body>
-<div style="background-color: #ac26b5;">
-    <ul style="list-style: none;">
-        <li>Привет</li>
-        <li>Это тестовая часть</li>
-        <li>Приложения</li>
-    </ul>
-</div>
-<div class="main" style="background-color: rgba(0, 0, 0, 0.2);">
-    <form name="test" method="post" action="register.php">
-        <p><b>Ваше имя:</b><br>
-            <input type="text" size="50" name="name">
-        </p>
-        <p><b>Ваш логин:</b><br>
-            <input type="text" size="50" name="login">
-        </p>
-        <p><b>Пароль:</b><br>
-            <input type="text" size="50" name="password">
-        </p>
-        <p><b>Подтвердите пароль:</b><br>
-            <input type="text" size="50" name="pass_again">
-        </p>
-        <p><b>Номер телефона:</b><br>
-            <input type="text" size="50" name="phone">
-        </p>
-        <p><b>E-mail:</b><br>
-            <input type="text" size="50" name="email">
-        </p>
-        <p><input class="butt" type="submit" value="Регистрация"></p>
-    </form>
-</div>
+    <div class = "contactUsFrame">
+        <div class = "framafon">
+        <h1 class = "ContactUSText">Contact us:</h1>
+        <a href="https://vk.com" class = "vkBt" target="_blank"></a>
+        <a href="https://" class = "telegBt"></a>
+        <a href="https://" class = "gmailBt"></a>
+        <a href="https://" class = "wappBt"></a>
+    </div>
+    </div>
+    <div class="inputInfoFrame framafon">
+        <h1 class = "txtRegistration">Registration</h1>
+            <form name="test" method="post" action="register.php">
+                
+                <input class = "boxInputFullName" type="text" name="name" placeholder="Enter your full name">
+                <input class = "boxInputLogin" type="text" name="login" placeholder="Enter your future username">
+                <input class = "boxInputPassw" type="text" name="password" placeholder="Enter your password">
+                <input class = "boxInputPasswAgain" type="text" name="pass_again" placeholder="Enter your password again">
+                <input class = "boxInputPhoneNumber" type="text" name="phone" placeholder="Enter your phone number">               
+                <input class = "boxInputMail" type="text" name="email" placeholder="Enter your mail">       
+                <input class = "boxButtonEnter" type="submit" value="Enter">
+                
+            </form>
+    </div>
+    <div class = "toLoginPageFrame framafon">
+        <h1 class = "txtAlreadyReg">Are you already registred?</h1>
+    </div>
 </body>
 </html>
