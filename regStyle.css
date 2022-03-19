@@ -343,7 +343,6 @@ body {
   top: 0px;
   background: url(images/fonMaskRight.png);
   mix-blend-mode: screen;
-  filter: blur(2px);
   z-index: 0;
 }
 
@@ -355,6 +354,5 @@ body {
   top: 170px;
   background: url(images/fonMaskLeft.png);
   mix-blend-mode: overlay;
-  filter: blur(2px);
   z-index: 0;
 }
