@@ -200,6 +200,9 @@ body {
   left: 195px;
   top: 120px;
   background: url("images/Google.png");
+  background-repeat: round;
+  border: dashed 2px black;
+  border-radius: 40px;
   mix-blend-mode: normal;
   filter: drop-shadow(10px -20px 4px rgba(0, 0, 0, 0.25));
   z-index: 10;
