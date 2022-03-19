@@ -29,25 +29,32 @@ if ($logged == 1) {
     {
     $result->data_seek($j);
     $row = $result->fetch_array(MYSQLI_NUM);
-    if ($name == $row[0] && $password == $row[2]){
-        $result = shell_exec("C:\Users\Олег\AppData\Local\Programs\Python\Python39\python.exe C:/Users/Олег/Desktop/Hackathon_1case/hackathon/main.py $name");
-        echo <<<_END
-    <p>Ваши данные:</p>
-    <pre>
-     name $row[0]
-    login $row[1]
- password $row[2]
-    phone $row[3]
-    email $row[4]
-    </pre>
-_END;
-    }
+    if ($name == $row[0] && $password == $row[2]) $result = shell_exec("C:\Users\Олег\AppData\Local\Programs\Python\Python39\python.exe C:/Users/Олег/Desktop/Hackathon_1case/hackathon/main.py $name");
   }
+    echo <<<_end
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="loginStyle.css">
+</head>
+<body>
+    <form action="homepage.html" method="post">
+    <h1>Вам на почту был выслан код. Введите его в поле:</h1>
+        <input name="qrcode" type="text">
+        <input name="submit" type="submit">
+    </form>
+</body>
+</html>
+_end;
+
 }
 
 else echo <<<_END
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,8 +76,8 @@ else echo <<<_END
     <div class="LoginFrame">
         <h1 class = "textLogin">Log in</h1>
         <form class = "form" name="test" method="post" action="login.php">
-                <input class = "baseBox"     type="text"   placeholder = "Enter your login, mail or phone number">
-                <input class = "baseBox"     type="text"   placeholder = "Enter your password">
+                <input class = "baseBox"  name="name"   type="text"   placeholder = "Enter your name">
+                <input class = "baseBox"  name="password"   type="password"   placeholder = "Enter your password">
                 <input class = "buttonEnter" type="submit" value = "Enter">
         </form>
         <h1 class = "OR">OR:</h1>
