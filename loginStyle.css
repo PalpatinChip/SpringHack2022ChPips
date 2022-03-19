@@ -1,0 +1,273 @@
+body {
+  position: static;
+  width: max-content;
+  height: max-content;
+  overflow-y: scroll;
+  background: radial-gradient(
+    94.58% 208.46% at 70.16% 92.87%,
+    #8adcff 0%,
+    #b9eeff 0.01%,
+    #40b7fb 100%
+  );
+} /*warning: gradient uses a rotation that is not supported by CSS and may not behave as expected {;*/
+
+.Register {
+  /*фрейм регистрации*/
+  position: absolute;
+  width: 334px;
+  height: 450px;
+  left: 1228px;
+  top: 100px;
+  background: #ffffff;
+  background: url(images/framefon.png);
+  background-repeat: round;
+  box-shadow: -10px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+.RegAsking {
+  /*вопрос о регистрации*/
+  position: absolute;
+  width: 256px;
+  height: 156px;
+  left: 39px;
+  top: 22px;
+  font-family: "Roboto";
+  user-select: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+}
+
+.registerbutton {
+  /*переход на регистрацию*/
+  position: absolute;
+  width: 245px;
+  height: 82px;
+  left: 48px;
+  top: 202px;
+  background: #b9eeff;
+  box-shadow: -10px 20px 4px rgba(0, 0, 0, 0.25);
+  border: outset 2px rgb(0, 0, 0);
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.toRegBtnText {
+  font-family: "Roboto";
+  user-select: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.LoginFrame {
+  /*фрейм логина*/
+  position: absolute;
+  width: 500px;
+  height: 700px;
+  left: 710px;
+  top: 100px;
+  background: #ffffff;
+  background: url(images/framefon.png);
+  box-shadow: -10px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+/* текст на фрейме логина */
+.textLogin {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  left: 150px;
+  top: 40px;
+  font-family: "Roboto";
+  user-select: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+}
+
+.form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+  left: 50px;
+}
+
+.baseBox {
+  width: 400px;
+  height: 60px;
+
+  padding-left: 10px;
+  margin-top: 10px;
+
+  background: #b9eeff;
+  filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 25px;
+
+  color: black;
+  font-family: "Roboto";
+  user-select: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* кнопка ентер */
+.buttonEnter {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  left: 100px;
+  top: 200px;
+  background: #40b7fb;
+  filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+
+  color: black;
+  font-family: "Roboto";
+  user-select: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 21px;
+}
+
+/* текст "или" */
+.OR {
+  position: absolute;
+  width: 237px;
+  height: 34px;
+  left: 125px;
+  top: 470px;
+  font-family: "Roboto";
+  user-select: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 36px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+
+/* переход на гугол */
+.googleEnter {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 210px;
+  top: 550px;
+  background: url(images/Google.png);
+  border: dashed 2px black;
+  border-radius: 40px;
+  filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* фрейм связь с нами */
+.Contact_us {
+  position: absolute;
+  width: 550px;
+  height: 300px;
+  left: 140px;
+  top: 500px;
+  background: #ffffff;
+  background: url(images/framefon.png);
+  background-repeat: round;
+  box-shadow: -10px 20px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+/* фрейм связь с нами текст */
+.Contact_us_text {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  left: 175px;
+  top: 30px;
+  font-family: "Roboto";
+  user-select: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+}
+
+.contactsBlock {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 150px;
+  left: 25px;
+}
+
+.contactsImages {
+  width: 96px;
+  height: 96px;
+  filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
+  margin-right: 40px;
+}
+
+.Ddos {
+  position: absolute;
+  width: 215px;
+  height: 215px;
+  left: 1642px;
+  top: 700px;
+  background: url(images/ddos.png);
+  filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* правый нижний угол */
+.Okrug {
+  position: absolute;
+  width: 401.99px;
+  height: 336.02px;
+  right: 0px;
+  bottom: 0px;
+  background: url(изображение_2022-03-18_215156.png);
+  background-blend-mode: overlay;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  box-shadow: 10px 10px 40px #8adcff, 10px 20px 10px #8adcff;
+  transform: rotate(179.99deg);
+}
+
+.okrug2 {
+  /*верхний левый угол*/
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 0px;
+  top: 0px;
+  background: url(images/topright.png);
+}
+
+.Figures {
+  /*папка с кружочками*/
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 0;
+  top: 0;
+}
