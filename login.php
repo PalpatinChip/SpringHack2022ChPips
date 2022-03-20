@@ -41,7 +41,8 @@ if ($logged == 1) {
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Login page</title>
+        <link rel="shortcut icon" href="images/ddos.png" type="image/png">
+        <title>Auth</title>
         <link rel="stylesheet" type="text/css" href="auth.css">
         <link rel="stylesheet" type="text/css" href="preloader.css">
     </head>
@@ -95,6 +96,7 @@ else
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/ddos.png" type="image/png">
     <title>Login page</title>
     <link rel="stylesheet" type="text/css" href="loginStyle.css">
     <link rel="stylesheet" type="text/css" href="preloader.css">
