@@ -39,8 +39,24 @@ if ($logged == 1) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Login page</title>
         <link rel="stylesheet" type="text/css" href="auth.css">
+        <link rel="stylesheet" type="text/css" href="preloader.css">
     </head>
     <body>
+
+    <!-- Preloader -->
+    <div class = "preloader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
         <div class = "mainFrame">
             <h1 class = "Text">Вам на почту был выслан код. Введите его в поле:</h1>
             <form action="homepage.html" method="post">
@@ -53,7 +69,15 @@ if ($logged == 1) {
             </div>
         </div>
         <div><img src = "images/fon.png" class = "fon"> </div>
-        
+        <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
     </body>
     </html>
 _end;

@@ -1,5 +1,4 @@
 body {
-  position: static;
   width: max-content;
   height: max-content;
   overflow-y: scroll;
@@ -13,11 +12,11 @@ body {
 
 .Register {
   /*фрейм регистрации*/
-  position: absolute;
-  width: 334px;
-  height: 450px;
-  left: 1228px;
-  top: 100px;
+  position: fixed;
+  width: 25vw;
+  height: 45vh;
+  left: 65vw;
+  top: 10vh;
   background: #ffffff;
   background: url(images/framefon.png);
   background-repeat: round;
@@ -27,17 +26,17 @@ body {
 
 .RegAsking {
   /*вопрос о регистрации*/
-  position: absolute;
-  width: 256px;
-  height: 156px;
-  left: 39px;
-  top: 22px;
+  position: relative;
+  width: 20vw;
+  height: 10vh;
+  left: 2.5vw;
+  top: 3vh;
   font-family: "Roboto";
   user-select: none;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2vw;
   line-height: 42px;
   text-align: center;
   color: #000000;
@@ -45,11 +44,11 @@ body {
 
 .registerbutton {
   /*переход на регистрацию*/
-  position: absolute;
-  width: 245px;
-  height: 82px;
-  left: 48px;
-  top: 202px;
+  position: relative;
+  width: 15vw;
+  height: 10vh;
+  left: 5vw;
+  top: 15vh;
   background: #b9eeff;
   box-shadow: -10px 20px 4px rgba(0, 0, 0, 0.25);
   border: outset 2px rgb(0, 0, 0);
@@ -63,19 +62,19 @@ body {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 2vw;
+  line-height: 4vh;
   text-align: center;
   color: #000000;
 }
 
 .LoginFrame {
   /*фрейм логина*/
-  position: absolute;
-  width: 500px;
-  height: 700px;
-  left: 710px;
-  top: 100px;
+  position: fixed;
+  width: 26vw;
+  height: 70vh;
+  left: 37vw;
+  top: 10vh;
   background: #ffffff;
   background: url(images/framefon.png);
   box-shadow: -10px 20px 4px rgba(0, 0, 0, 0.25);
@@ -84,36 +83,36 @@ body {
 
 /* текст на фрейме логина */
 .textLogin {
-  position: absolute;
-  width: 200px;
-  height: 60px;
-  left: 150px;
-  top: 40px;
+  position: relative;
+  width: 16vw;
+  height: 5vh;
+  left: 5vw;
+  top: 3vh;
   font-family: "Roboto";
   user-select: none;
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
+  font-weight: 1000;
+  font-size: 2vw;
   line-height: 42px;
   text-align: center;
   color: #000000;
 }
 
 .form {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
-  top: 150px;
-  left: 50px;
+  top: 8vh;
+  left: 4vw;
 }
 
 .baseBox {
-  width: 400px;
-  height: 60px;
+  width: 16vw;
+  height: 5vh;
 
-  padding-left: 10px;
-  margin-top: 10px;
+  padding-left: 1vw;
+  margin-top: 1vh;
 
   background: #b9eeff;
   filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
@@ -125,17 +124,17 @@ body {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1vw;
   line-height: 21px;
 }
 
 /* кнопка ентер */
 .buttonEnter {
-  position: absolute;
-  width: 200px;
-  height: 80px;
-  left: 100px;
-  top: 200px;
+  position: relative;
+  width: 14vw;
+  height: 6vh;
+  left: 2vw;
+  top: 7vh;
   background: #40b7fb;
   filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
   border-radius: 50px;
@@ -146,23 +145,23 @@ body {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2vw;
   line-height: 21px;
 }
 
 /* текст "или" */
 .OR {
-  position: absolute;
-  width: 237px;
-  height: 34px;
-  left: 125px;
-  top: 470px;
+  position: relative;
+  width: 6vw;
+  height: 6vh;
+  left: 9.5vw;
+  top: 18vh;
   font-family: "Roboto";
   user-select: none;
   text-decoration: none;
   font-style: normal;
   font-weight: 1000;
-  font-size: 36px;
+  font-size: 2vw;
   line-height: 28px;
   text-align: center;
   color: #000000;
@@ -170,102 +169,102 @@ body {
 
 /* переход на гугол */
 .googleEnter {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  left: 210px;
-  top: 550px;
-  background: url(images/Google.png);
+  position: relative;
+  width: 4vw;
+  height: 8vh;
+  left: 10.5vw;
+  top: 14vh;
+
   filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* фрейм связь с нами */
 .Contact_us {
-  position: absolute;
-  width: 550px;
-  height: 300px;
-  left: 140px;
-  top: 500px;
+  position: fixed;
+  width: 25vw;
+  height: 40vh;
+  left: 10vw;
+  top: 40vh;
   background: #ffffff;
   background: url(images/framefon.png);
   background-repeat: round;
   box-shadow: -10px 20px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
+  z-index: 10;
 }
 
 /* фрейм связь с нами текст */
 .Contact_us_text {
-  position: absolute;
-  width: 200px;
-  height: 80px;
-  left: 175px;
-  top: 30px;
+  position: relative;
+  width: 10vw;
+  height: 10vh;
+  left: 7.5vw;
+  top: 3vh;
   font-family: "Roboto";
   user-select: none;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2vw;
   line-height: 42px;
   text-align: center;
   color: #000000;
 }
 
 .contactsBlock {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: row;
-  top: 150px;
-  left: 25px;
+  top: 5vh;
+  left: 1vw;
 }
 
 .contactsImages {
-  width: 96px;
-  height: 96px;
+  width: 4vw;
+  height: 8vh;
   filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
-  margin-right: 40px;
+  margin-right: 2vw;
 }
 
 .Ddos {
-  position: absolute;
-  width: 215px;
-  height: 215px;
-  left: 1642px;
-  top: 700px;
-  background: url(images/ddos.png);
+  position: fixed;
+  width: 10vw;
+  height: 20vh;
+  left: 80vw;
+  top: 70vh;
   filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* правый нижний угол */
-.Okrug {
-  position: absolute;
+/* .Okrug {
+  position: fixed;
   width: 401.99px;
   height: 336.02px;
   right: 0px;
   bottom: 0px;
-  background: url(изображение_2022-03-18_215156.png);
+  background: url(images/top_left.png);
   background-blend-mode: overlay;
   mix-blend-mode: normal;
   opacity: 0.9;
   box-shadow: 10px 10px 40px #8adcff, 10px 20px 10px #8adcff;
   transform: rotate(179.99deg);
-}
+} */
 
 .okrug2 {
   /*верхний левый угол*/
-  position: absolute;
-  width: 500px;
-  height: 500px;
+  position: fixed;
+  width: 25vw;
+  height: 50vh;
   left: 0px;
   top: 0px;
-  background: url(images/topright.png);
+  z-index: 0;
 }
 
 .Figures {
   /*папка с кружочками*/
-  position: absolute;
-  width: fit-content;
-  height: fit-content;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
 }
