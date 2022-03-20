@@ -133,7 +133,7 @@ body {
   position: relative;
   width: 14vw;
   height: 6vh;
-  left: 2vw;
+  left: 1.5vw;
   top: 7vh;
   background: #40b7fb;
   filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
@@ -150,33 +150,61 @@ body {
 }
 
 /* текст "или" */
-.OR {
+/*.OR {*/
+/*  position: relative;*/
+/*  width: 6vw;*/
+/*  height: 6vh;*/
+/*  left: 9.5vw;*/
+/*  top: 18vh;*/
+/*  font-family: "Roboto";*/
+/*  user-select: none;*/
+/*  text-decoration: none;*/
+/*  font-style: normal;*/
+/*  font-weight: 1000;*/
+/*  font-size: 2vw;*/
+/*  line-height: 28px;*/
+/*  text-align: center;*/
+/*  color: #000000;*/
+/*}*/
+
+/*!* переход на гугол *!*/
+/*.googleEnter {*/
+/*  position: relative;*/
+/*  width: 4vw;*/
+/*  height: 8vh;*/
+/*  left: 10.5vw;*/
+/*  top: 14vh;*/
+
+/*  filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));*/
+
+
+.rememberPassw {
   position: relative;
-  width: 6vw;
-  height: 6vh;
-  left: 9.5vw;
-  top: 18vh;
+  width: 18vw;
+  height:10vh;
+  left:4vw;
+  top:3vh;
+
   font-family: "Roboto";
   user-select: none;
   text-decoration: none;
   font-style: normal;
-  font-weight: 1000;
-  font-size: 2vw;
-  line-height: 28px;
+  font-weight: 900;
+  font-size: 1vw;
   text-align: center;
   color: #000000;
+
 }
 
-/* переход на гугол */
-.googleEnter {
-  position: relative;
-  width: 4vw;
-  height: 8vh;
-  left: 10.5vw;
-  top: 14vh;
-
-  filter: drop-shadow(-10px 20px 4px rgba(0, 0, 0, 0.25));
+.vkAuth {
+  position:relative;
+  width: 12vw;
+  height: 10vh;
+  left: 7vw;
+  top: 25vh
 }
+
+
 
 /* фрейм связь с нами */
 .Contact_us {
@@ -268,3 +296,5 @@ body {
   left: 0;
   top: 0;
 }
+
+

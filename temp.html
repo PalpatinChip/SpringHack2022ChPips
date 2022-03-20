@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="auth.css">
+</head>
+<body>
+    <div class = "mainFrame">
+        <h1 class = "Text">Вам на почту был выслан код. Введите его в поле:</h1>
+        <form action="finalCheck.php" method="post">
+            <input class = "btnEnter" name="qrcode" type="text" maxlength="8" placeholder="# # # # # # # #">
+            <input class = "btnSend"  name="submit" type="submit" value="Отправить!">
+        </form>
+        <div>
+            <img src = "images/triangle.png" class = "triangle">
+            <img src = "images/qr-code.png" class = "qrCod">
+        </div>
+    </div>
+    <div><img src = "images/fon.png" class = "fon"> </div>
+</body>
+</html>
