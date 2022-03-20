@@ -1,7 +1,6 @@
 body {
   height: 100%;
   width: 100%;
-  overflow-y: scroll;
   background: radial-gradient(
     65.12% 159.79% at 58.78% 54.49%,
     #99fefe 0%,
@@ -154,6 +153,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  top: 10vh;
 }
 
 .contactsBlock {

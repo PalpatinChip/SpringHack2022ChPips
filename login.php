@@ -32,22 +32,30 @@ if ($logged == 1) {
     if ($name == $row[0] && $password == $row[2]) $result = shell_exec("C:\Users\Олег\AppData\Local\Programs\Python\Python39\python.exe C:/Users/Олег/Desktop/Hackathon_1case/hackathon/main.py $name");
   }
     echo <<<_end
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login page</title>
-    <link rel="stylesheet" type="text/css" href="loginStyle.css">
-</head>
-<body>
-    <form action="homepage.html" method="post">
-    <h1>Вам на почту был выслан код. Введите его в поле:</h1>
-        <input name="qrcode" type="text">
-        <input name="submit" type="submit">
-    </form>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login page</title>
+        <link rel="stylesheet" type="text/css" href="auth.css">
+    </head>
+    <body>
+        <div class = "mainFrame">
+            <h1 class = "Text">Вам на почту был выслан код. Введите его в поле:</h1>
+            <form action="homepage.html" method="post">
+                <input class = "btnEnter" name="qrcode" type="password" maxlength="8" placeholder="# # # # # # # #">
+                <input class = "btnSend"  name="submit" type="submit" value="Отправить!">
+            </form>
+            <div>
+                <img src = "images/triangle.png" class = "triangle">
+                <img src = "images/qr-code.png" class = "qrCod">
+            </div>
+        </div>
+        <div><img src = "images/fon.png" class = "fon"> </div>
+        
+    </body>
+    </html>
 _end;
 
 }
