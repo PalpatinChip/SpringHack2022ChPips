@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="styleVova.css">
+    <link rel="stylesheet" type="text/css" href="preloader.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class = "preloader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+
+    <div class = "contactUsFrame" onclick="this.style.left='14vw'" ondblclick="this.style.left='0'">
+        <h1 class = "ContactUSText">Contact us:</h1>
+        <div class = "ContUsBtns">
+            <div class = "contactsBlock" style = "z-index: 10;">
+                <a class = "contactsImages" href = "https://vk.com/ddosguard"  target="_blank"><img src="images/vk.png" class = "contactsImages"></a>
+                <a class = "contactsImages" href = "https://t.me/ddos_guard"   target="_blank"><img src="images/teleg.png" class = "contactsImages"></a>
+            </div>
+            <div class = "contactsBlock">
+                <a class = "contactsImages" href="info@ddos-guard.net" target="_blank"><img src="images/gmail.png" class = "contactsImages"></a>
+                <a class = "contactsImages" href="https://wa.me/89889476904" target="_blank"><img src="images/wapp.png" class = "contactsImages"></a>
+            </div>
+        </div>
+
+    </div>
+    <main class="inputInfoFrame">
+        <h1 class = "txtRegistration">Registration</h1>
+<!--        <a href="https://" target="_blank"><img src = "images/Google.png" class = "googleEnter"></a>-->
+            <form class = "form" name="test" method="post" action="register.php">
+                <input style = "z-index: 7;" class = "baseBox" type="text"     name="name"       placeholder="Enter your full name">
+                <input style = "z-index: 6;" class = "baseBox" type="text"     name="login"      placeholder="Enter your future username">
+                <input style = "z-index: 5;" class = "baseBox" type="password" name="password"   placeholder="Enter your password">
+                <input style = "z-index: 4;" class = "baseBox" type="password" name="pass_again" placeholder="Enter your password again">
+                <input style = "z-index: 3;" class = "baseBox" type="text"     name="phone"      placeholder="Enter your phone number">               
+                <input style = "z-index: 2;" class = "baseBox" type="text"     name="email"      placeholder="Enter your mail">       
+                <input class = "boxButtonEnter" type="submit" value="Enter">
+            </form>
+        </main>
+    <div class = "toLoginPageFrame">
+        <h1 class = "txtAlreadyReg">Are you already registred?</h1>
+        <a href = "log.html" style = "user-select: none; text-decoration: none;"><div class = "boxLogPage"><h1 class = "txtLoginPage">To login page</h1></div></a>
+    </div>
+    <div class = "pngwing1"></div>
+    <div class = "pngwing2"></div>
+    <a href="https://ddos-guard.net" class = "ddosImg"><img src = "images/ddos.png">"</a>
+    <div class = "topLeft"></div>
+    
+    <div style = "position:fixed; width: 15%; height: 10%; background-color: white; top:50%; left: 17%; user-select: none; text-align: center;" onclick="alert('Wow! You found easter egg! You are awesome!')">Click me</div>
+
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+</body>
+</html>
